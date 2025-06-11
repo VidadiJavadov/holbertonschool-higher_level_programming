@@ -6,5 +6,3 @@ for i in range(10):
                 print("{:02}{:02}".format(i, j))
             else:
                 print("{:02}{:02}".format(i, j), end=", ")
-
-
