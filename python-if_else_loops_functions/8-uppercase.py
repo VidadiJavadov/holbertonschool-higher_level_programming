@@ -7,4 +7,3 @@ def uppercase(s):
         else:
             result += s[i]
     return result
-
