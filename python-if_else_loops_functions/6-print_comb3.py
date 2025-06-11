@@ -5,4 +5,4 @@ for i in range(10):
             if i == 8 and j == 9:
                 print("{0}{1}".format(i,j))
             else:
-                print("{}{}".format(i,j), end=", ")
+                print("{}{}".format(i,j),end=", ")
