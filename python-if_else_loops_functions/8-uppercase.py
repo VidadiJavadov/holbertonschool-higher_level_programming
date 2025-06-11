@@ -8,4 +8,3 @@ def uppercase(s):
             result += s[i]
     return result
 
-print(uppercase("best"))
