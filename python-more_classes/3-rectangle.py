@@ -56,5 +56,6 @@ class Rectangle:
     
     def __str__(self):
         """Return rectangle as a string of '#' characters"""
-        for i in range(self.__width):
-            print(self.__height * "#")
+        if self.__width == 0 or self.__height == 0:
+            return ""
+        return "\n".join(["#" * self.__width for i in range(self.__height)])
