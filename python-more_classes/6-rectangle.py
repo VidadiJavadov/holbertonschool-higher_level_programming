@@ -1,12 +1,12 @@
 #!/usr/bin/python3
 
 """Rectangle Class"""
-number_of_instances = 0
 
 
 class Rectangle:
     """This a Rectangle class"""
-
+    number_of_instances = 0
+    
     def __init__(self, width=0, height=0):
         """Initializing"""
         number_of_instances += 1
