@@ -4,4 +4,4 @@
 
 def lookup(obj):
     """This a method which is mentioned"""
-    return obj.__dict__
+    return sorted(obj.__dict__)
