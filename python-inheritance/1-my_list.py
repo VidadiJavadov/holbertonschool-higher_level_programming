@@ -1,12 +1,8 @@
 #!/usr/bin/python3
-"""this is a class that inherits from list"""
+"""This is a Class."""
 
 
 class MyList(list):
-    """Sorted Mylist"""
-
+    """This is a inside of Class."""
     def print_sorted(self):
-        """Method for soring list"""
-
         print(sorted(self))
-
