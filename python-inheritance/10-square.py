@@ -13,3 +13,7 @@ class Square(Rectangle):
     def area(self):
         """Area method"""
         return super().area()
+
+    def __str__(self):
+        """str"""
+        return super().__str__()
