@@ -11,9 +11,9 @@ class Square(Rectangle):
         self.__size = size
 
     def area(self):
-        """Area method"""
-        return super().area()
-
+        """Area"""
+        Rectangle.area()
+    
     def __str__(self):
         """str"""
-        return super().__str__()
+        Rectangle.__str__()
