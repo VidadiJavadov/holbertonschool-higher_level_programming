@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """A file contains Square1 class"""
-
 Rectangle = __import__('9-rectangle.py').Rectangle
 
 
@@ -12,4 +11,5 @@ class Square(Rectangle):
         self.__size = size
 
     def area(self):
+        """Area method"""
         return super().area()
