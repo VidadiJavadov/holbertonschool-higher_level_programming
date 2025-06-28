@@ -12,4 +12,11 @@ class Student:
 
     def to_json(self, attrs=None):
         """dict representation"""
-        return attrs.__dict__
+        result = {}
+        if isinstance(attrs, list):
+            for attr in attrs:
+                if(all(type(attr)) is str):
+                    for key in attrs:
+                        if hasattr(self, key):
+                            result[key] = getattr(self, key)
+        return self.__dict__
