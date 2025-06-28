@@ -20,7 +20,7 @@ class Student:
                         if hasattr(self, key):
                             result[key] = getattr(self, key)
         return self.__dict__
-    
+
     def reload_from_json(self, json):
         """
         Replaces all attributes of the Student instance
