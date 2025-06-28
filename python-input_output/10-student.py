@@ -15,7 +15,7 @@ class Student:
         result = {}
         if isinstance(attrs, list):
             for attr in attrs:
-                if(type(attr) is str):
+                if (type(attr) is str):
                     for key in attrs:
                         if hasattr(self, key):
                             result[key] = getattr(self, key)
