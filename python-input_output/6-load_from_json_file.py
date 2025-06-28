@@ -4,6 +4,6 @@ import json
 
 
 def load_from_json_file(filename):
-    """function"""
-    with open(filename) as mf:
-        obj = json.load(mf)
+    """func"""
+    with open(filename, mode="r", encoding="utf-8") as myfile:
+        return json.load(myfile)
