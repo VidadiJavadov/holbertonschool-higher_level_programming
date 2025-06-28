@@ -19,4 +19,5 @@ class Student:
                     for key in attrs:
                         if hasattr(self, key):
                             result[key] = getattr(self, key)
+            return result
         return self.__dict__
