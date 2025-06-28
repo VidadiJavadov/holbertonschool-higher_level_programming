@@ -6,4 +6,4 @@ import json
 def save_to_json_file(my_obj, filename):
     """func"""
     with open(filename, mode="w") as myfile:
-        json.dumb(my_obj, myfile)
+        json.dump(my_obj, myfile)
