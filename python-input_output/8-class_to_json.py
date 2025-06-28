@@ -4,4 +4,4 @@
 
 def class_to_json(obj):
     """Represent class as json format"""
-    return json.dumbs(obj)
+    return obj.__dict__
