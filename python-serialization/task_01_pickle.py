@@ -1,18 +1,19 @@
 #!/usr/bin/python3
+"""Serialization using pickle"""
+
 import pickle
-"""Serialization"""
 
 
 class CustomObject:
-    """CustomObj"""
+    """Custom object with name, age, and student status"""
+
     def __init__(self, name, age, is_student):
-        """init"""
         self.name = name
         self.age = age
         self.is_student = is_student
 
     def display(self):
-        """display"""
+        """Display object attributes"""
         print("Name: {}".format(self.name))
         print("Age: {}".format(self.age))
         print("Is Student: {}".format(self.is_student))
