@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Serialization using pickle"""
+"""Serialization using the pickle module"""
 
 import pickle
 
@@ -13,24 +13,24 @@ class CustomObject:
         self.is_student = is_student
 
     def display(self):
-        """Display object attributes"""
+        """Display the object's attributes"""
         print("Name: {}".format(self.name))
         print("Age: {}".format(self.age))
         print("Is Student: {}".format(self.is_student))
 
     def serialize(self, filename):
-        """Serialize the object to a binary file using pickle"""
+        """Serialize the object and save it to the given file"""
         try:
-            with open(filename, mode="wb") as file:
+            with open(filename, "wb") as file:
                 pickle.dump(self, file)
         except (OSError, pickle.PickleError) as e:
             print("Serialization error:", e)
 
     @classmethod
     def deserialize(cls, filename):
-        """Deserialize an object from a binary file using pickle"""
+        """Deserialize and return an object from the given file"""
         try:
-            with open(filename, mode="rb") as file:
+            with open(filename, "rb") as file:
                 return pickle.load(file)
         except (OSError, pickle.PickleError) as e:
             print("Deserialization error:", e)
