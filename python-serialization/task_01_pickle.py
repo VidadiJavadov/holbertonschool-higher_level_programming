@@ -1,13 +1,11 @@
 #!/usr/bin/python3
-import json
 import pickle
-import string
 """Serialization"""
 
 
 class CustomObject:
     """CustomObj"""
-    name: string
+    name: str
     age: int
     is_student: bool
 
