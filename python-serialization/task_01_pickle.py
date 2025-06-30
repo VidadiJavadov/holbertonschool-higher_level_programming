@@ -2,7 +2,7 @@
 import pickle
 """Serialization"""
 
-
+@dataclass
 class CustomObject:
     """CustomObj"""
     name: str
