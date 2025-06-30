@@ -2,13 +2,9 @@
 import pickle
 """Serialization"""
 
-@dataclass
+
 class CustomObject:
     """CustomObj"""
-    name: str
-    age: int
-    is_student: bool
-
     def __init__(self, name, age, is_student):
         """init"""
         self.name = name
