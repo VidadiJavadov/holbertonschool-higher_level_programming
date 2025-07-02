@@ -1,2 +1,2 @@
-#showing
-mysql> show databases;
+-- showing databases
+SHOW DATABASES;
