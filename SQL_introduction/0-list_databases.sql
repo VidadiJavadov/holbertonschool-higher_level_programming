@@ -1,1 +1,2 @@
+#showing
 mysql> show databases;
