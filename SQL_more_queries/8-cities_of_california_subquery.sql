@@ -1,4 +1,7 @@
 --without join
 SELECT id, name 
-FROM states s, cities c
-WHERE s.states_id = c.id;
+FROM cities
+WHERE state_id = (
+SELECT id FROM states WHERE name = 'California'
+)
+ORDER BY id ASC;
